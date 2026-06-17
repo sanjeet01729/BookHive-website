@@ -3,7 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BookHive - The World's Classics, Reimagined</title>
+    <title>BookHive — Free Classic Books App | Read 1000+ Ebooks Offline</title>
+    <meta name="description" content="Download BookHive, a free classic books app for Android. Read 1000+ public domain novels, poetry & philosophy offline with beautiful themes and a dyslexia-friendly reader.">
+    <link rel="canonical" href="https://bookhive-app.netlify.app/">
+    <meta property="og:title" content="BookHive — Free Classic Books App for Android">
+    <meta property="og:description" content="Read 1000+ public domain classics offline. Free ebook reader with beautiful themes, reading stats, and a dyslexia-friendly font.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://bookhive-app.netlify.app/">
+    <meta property="og:site_name" content="BookHive">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="BookHive — Free Classic Books App for Android">
+    <meta name="twitter:description" content="Read 1000+ public domain classics offline. Free ebook reader with beautiful themes and reading stats.">
     <style>
         * {
             margin: 0;
@@ -1129,13 +1139,40 @@
             transform: translateY(0);
         }
     </style>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "BookHive",
+      "description": "Free classic books app for Android with 1000+ public domain ebooks. Read offline with beautiful themes and a dyslexia-friendly reader.",
+      "operatingSystem": "Android",
+      "applicationCategory": "BooksApplication",
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR" },
+      "downloadUrl": "https://play.google.com/store/apps/details?id=com.bookhivem.app",
+      "url": "https://bookhive-app.netlify.app/",
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.8", "bestRating": "5" }
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "Is BookHive free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes! BookHive is free to download and use. You get full access to 1000+ classic books, offline downloads, bookmarks, reading stats, and smart search at no cost. The free version includes ads. Optional one-time in-app purchases unlock premium reading themes and an ad-free experience." } },
+        { "@type": "Question", "name": "Does BookHive work offline?", "acceptedAnswer": { "@type": "Answer", "text": "Absolutely. Download any book to your device and read completely offline — no internet needed. Perfect for flights, commutes, and travel." } },
+        { "@type": "Question", "name": "What books are available on BookHive?", "acceptedAnswer": { "@type": "Answer", "text": "1000+ public domain classics spanning fiction, philosophy, mystery, poetry, and more by authors like Jane Austen, Charles Dickens, Fyodor Dostoevsky, and Mark Twain." } },
+        { "@type": "Question", "name": "Is BookHive available for iOS?", "acceptedAnswer": { "@type": "Answer", "text": "BookHive is currently available exclusively on Android via the Google Play Store." } },
+        { "@type": "Question", "name": "What reading features does BookHive offer?", "acceptedAnswer": { "@type": "Answer", "text": "Light, Sepia, Dark, and AMOLED reading themes, dyslexia-friendly font, automatic progress saving, bookmarks, table of contents navigation, reading stats and streaks, and smart search by title, author, category, or mood." } }
+      ]
+    }
+    </script>
 </head>
 <body>
     <!-- Navigation -->
     <nav id="navbar">
         <div class="nav-logo">BookHive</div>
         <div class="nav-right">
-            <button class="btn-join" onclick="smoothScroll('#join-beta-section')">Join Beta</button>
+            <a class="btn-join" href="https://play.google.com/store/apps/details?id=com.bookhivem.app" target="_blank" rel="noopener">Download Free</a>
             <button class="hamburger" id="hamburger">
                 <span></span>
                 <span></span>
@@ -1147,14 +1184,14 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h1>The World's Classics, Reimagined</h1>
-            <p class="subheading">1000+ free classic books beautifully presented. Read anywhere, anytime — even offline.</p>
+            <h1>Read 1000+ Classic Books Free — Your Offline Digital Library</h1>
+            <p class="subheading">Discover a beautifully crafted ebook reader with 1000+ public domain classics — from Austen to Dostoevsky. Download novels, poetry, and philosophy to read offline, anytime.</p>
             <div class="hero-buttons">
-                <button class="btn-join" onclick="smoothScroll('#join-beta-section')">Join Beta</button>
-                <button class="btn-secondary" onclick="smoothScroll('#features')">Learn More</button>
+                <a class="btn-primary" href="https://play.google.com/store/apps/details?id=com.bookhivem.app" target="_blank" rel="noopener">Download Free on Google Play</a>
+                <button class="btn-secondary" onclick="smoothScroll('#features')">See Features</button>
             </div>
             <div class="hero-tags">
-                <span>💝 Free forever</span>
+                <span>💝 Free to use</span>
                 <span>📱 No signup required</span>
                 <span>📚 1000+ books</span>
             </div>
@@ -1162,7 +1199,7 @@
         <div class="hero-mockup">
             <div class="phone-frame">
                 <div class="phone-notch"></div>
-                <div class="phone-screen" style="background-image: url('images/Onboardingscreen.jpeg');"></div>
+                <div class="phone-screen"><img src="images/Onboardingscreen.jpeg" alt="BookHive app welcome screen showing classic book library for Android" style="width:100%;height:100%;object-fit:cover;border-radius:32px;"></div>
             </div>
         </div>
     </section>
@@ -1179,7 +1216,7 @@
         </div>
         <div class="stat-item">
             <h3>Free</h3>
-            <p>Forever</p>
+            <p>Core App</p>
         </div>
         <div class="stat-item">
             <h3>📶 Offline</h3>
@@ -1189,37 +1226,37 @@
 
     <!-- Features Section -->
     <section class="features" id="features">
-        <h2 class="section-heading">Everything a Book Lover Needs</h2>
+        <h2 class="section-heading">Everything a Classic Book Lover Needs</h2>
         <div class="features-grid">
             <div class="feature-card">
                 <div class="feature-icon">📚</div>
-                <h3>Massive Library</h3>
-                <p>1000+ classic books across Fiction, Philosophy, Mystery, Poetry and more. Curated to inspire and educate.</p>
+                <h3>Free Public Domain Library</h3>
+                <p>Browse 1000+ classic ebooks across fiction, philosophy, mystery, poetry, and more. All public domain — completely free to read and download.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🌙</div>
-                <h3>Beautiful Themes</h3>
-                <p>Light, Sepia, Dark and AMOLED themes for comfortable reading day and night. Your eyes will thank you.</p>
+                <h3>Comfortable Reading Themes</h3>
+                <p>Choose from Light, Sepia, Dark, and AMOLED themes for comfortable reading day and night. Plus a dyslexia-friendly font for accessible reading.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📥</div>
-                <h3>Offline Reading</h3>
-                <p>Save books to read without internet. Perfect for travel, commutes, and cozy reading sessions anywhere.</p>
+                <h3>Offline Ebook Downloads</h3>
+                <p>Download classic books to read without internet. Perfect for flights, commutes, and reading anywhere — your entire library travels with you.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">📊</div>
-                <h3>Reading Stats</h3>
-                <p>Track your reading streaks, time spent, and books completed. Watch yourself grow as a reader.</p>
+                <h3>Reading Stats & Streaks</h3>
+                <p>Track your reading streaks, time spent, and books completed. Build a habit and watch yourself grow as a reader with beautiful analytics.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">🔍</div>
-                <h3>Smart Search</h3>
-                <p>Search by title, author, category or mood. Find your next favorite book instantly and effortlessly.</p>
+                <h3>Smart Book Search</h3>
+                <p>Search by title, author, category, or even mood. Find your next favourite classic novel instantly with intelligent search.</p>
             </div>
             <div class="feature-card">
                 <div class="feature-icon">✨</div>
                 <h3>AI Summaries</h3>
-                <p>Coming soon: AI powered page summaries to understand difficult passages and complex concepts instantly.</p>
+                <p>Coming soon: AI-powered page summaries to help you understand difficult passages and complex literary concepts instantly.</p>
             </div>
         </div>
     </section>
@@ -1227,22 +1264,22 @@
     <!-- How It Works -->
     <section class="how-it-works">
         <div class="how-it-works-container">
-            <h2 class="section-heading">Start Reading in 3 Steps</h2>
+            <h2 class="section-heading">Start Reading Classic Books Offline in 3 Steps</h2>
             <div class="steps">
                 <div class="step">
                     <div class="step-number">1</div>
-                    <h3>Download BookHive</h3>
-                    <p>Get BookHive from the Google Play Store. It's free, lightweight, and works on all Android phones.</p>
+                    <h3>Download BookHive Free</h3>
+                    <p>Get BookHive from the Google Play Store. It's free, lightweight, and works on all Android devices.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <h3>Browse 1000+ Classics</h3>
-                    <p>Explore thousands of books by category, author, or mood. Find exactly what you're in the mood for.</p>
+                    <h3>Browse 1000+ Classic Ebooks</h3>
+                    <p>Explore a curated library of public domain literature by category, author, or mood. From Sherlock Holmes to Meditations — find exactly what you want.</p>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <h3>Read Beautifully</h3>
-                    <p>Enjoy distraction-free reading with beautiful themes. Read online or save for offline reading.</p>
+                    <h3>Read Beautifully, Online or Offline</h3>
+                    <p>Enjoy distraction-free reading with beautiful themes. Save any book for offline reading — no internet needed.</p>
                 </div>
             </div>
         </div>
@@ -1250,37 +1287,42 @@
 
     <!-- Screenshots Carousel -->
     <section class="screenshots">
-        <h2 class="section-heading">See BookHive in Action</h2>
+        <h2 class="section-heading">See the Best Free Ebook Reader in Action</h2>
         <div class="carousel-container">
             <div class="carousel-wrapper" id="carouselWrapper">
                 <div class="carousel-slide">
                     <div class="slide-notch"></div>
-                    <div class="slide-content" style="background-image: url('images/Homesscreen.jpeg');">
-                        <div class="slide-title">Home Screen</div>
+                    <div class="slide-content">
+                        <img src="images/Homesscreen.jpeg" class="slide-image" alt="BookHive home screen with curated classic books and reading categories" style="position: absolute; top: 0; left: 0; z-index: 1;">
+                        <div class="slide-title" style="z-index: 2;">Home Screen</div>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <div class="slide-notch"></div>
-                    <div class="slide-content" style="background-image: url('images/readingscreen.jpeg');">
-                        <div class="slide-title">Reading Experience</div>
+                    <div class="slide-content">
+                        <img src="images/readingscreen.jpeg" class="slide-image" alt="BookHive reading view with sepia theme showing classic novel text" style="position: absolute; top: 0; left: 0; z-index: 1;">
+                        <div class="slide-title" style="z-index: 2;">Reading Experience</div>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <div class="slide-notch"></div>
-                    <div class="slide-content" style="background-image: url('images/explorescreen.png');">
-                        <div class="slide-title">Explore Books</div>
+                    <div class="slide-content">
+                        <img src="images/explorescreen.png" class="slide-image" alt="BookHive explore screen for browsing free public domain ebooks" style="position: absolute; top: 0; left: 0; z-index: 1;">
+                        <div class="slide-title" style="z-index: 2;">Explore Books</div>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <div class="slide-notch"></div>
-                    <div class="slide-content" style="background-image: url('images/statsscreen.jpeg');">
-                        <div class="slide-title">Reading Stats</div>
+                    <div class="slide-content">
+                        <img src="images/statsscreen.jpeg" class="slide-image" alt="BookHive reading statistics dashboard showing streaks and progress" style="position: absolute; top: 0; left: 0; z-index: 1;">
+                        <div class="slide-title" style="z-index: 2;">Reading Stats</div>
                     </div>
                 </div>
                 <div class="carousel-slide">
                     <div class="slide-notch"></div>
-                    <div class="slide-content" style="background-image: url('images/offlinedownload.png');">
-                        <div class="slide-title">Offline Library</div>
+                    <div class="slide-content">
+                        <img src="images/offlinedownload.png" class="slide-image" alt="BookHive offline library with downloaded classic books for Android" style="position: absolute; top: 0; left: 0; z-index: 1;">
+                        <div class="slide-title" style="z-index: 2;">Offline Library</div>
                     </div>
                 </div>
             </div>
@@ -1294,42 +1336,39 @@
     <!-- Join Beta Section -->
     <section class="join-beta" id="join-beta-section">
         <div class="join-beta-content">
-            <h2>Be Among the First to Read</h2>
-            <p class="subheading">BookHive is currently in closed beta. Join our testing group and get early access to the most beautiful reading experience.</p>
-            
-            <!-- Step-by-step Guide -->
-            <div class="beta-steps-guide">
-                <h3>How to Get BookHive</h3>
-                <div class="beta-steps">
-                    <div class="beta-step">
-                        <div class="beta-step-number">1</div>
-                        <div class="beta-step-content">
-                            <div class="beta-step-title">Join Google Group</div>
-                            <p>Click "Join Testing Group" to join our community. Approve the membership request and you'll get access.</p>
-                        </div>
-                    </div>
-                    <div class="beta-step">
-                        <div class="beta-step-number">2</div>
-                        <div class="beta-step-content">
-                            <div class="beta-step-title">Wait for Approval</div>
-                            <p>Once you join the group, Google Play recognizes you as a tester automatically.</p>
-                        </div>
-                    </div>
-                    <div class="beta-step">
-                        <div class="beta-step-number">3</div>
-                        <div class="beta-step-content">
-                            <div class="beta-step-title">Download the App</div>
-                            <p>Click "Download on Play Store" to install BookHive. It's free and ready to use!</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            <h2>Download BookHive — Free Classic Books App for Android</h2>
+            <p class="subheading">Join thousands of readers who've rediscovered the joy of classic literature. BookHive is free to download — start reading in under 30 seconds.</p>
             <div class="join-beta-buttons">
-                <button class="btn-dark" onclick="window.open('https://groups.google.com/g/bookhivem', '_blank')">1️⃣ Join Testing Group</button>
-                <button class="btn-dark" onclick="window.open('https://play.google.com/store/apps/details?id=com.bookhivem.app', '_blank')">3️⃣ Download on Play Store</button>
+                <a class="btn-dark" href="https://play.google.com/store/apps/details?id=com.bookhivem.app" target="_blank" rel="noopener" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;">📥 Download Free on Google Play</a>
             </div>
-            <div class="join-beta-footer">Currently in closed beta • Available on Android • Free forever</div>
+            <div class="join-beta-footer">Free to use · Available on Android · Optional premium upgrades</div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="features" id="faq" style="padding-bottom: 3rem;">
+        <h2 class="section-heading">Frequently Asked Questions</h2>
+        <div style="max-width: 800px; margin: 0 auto; padding: 0 1rem;">
+            <div class="feature-card" style="margin-bottom: 1.5rem; cursor: default;">
+                <h3 style="color: var(--accent); font-family: Georgia, serif; font-size: 1.2rem; margin-bottom: 0.8rem;">Is BookHive free?</h3>
+                <p style="color: var(--text-secondary); line-height: 1.7;">Yes! BookHive is free to download and use. You get full access to 1000+ classic books, offline downloads, bookmarks, reading stats, and smart search at no cost. The free version includes ads. Optional one-time in-app purchases (₹99–₹999) unlock premium reading themes and an ad-free experience.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom: 1.5rem; cursor: default;">
+                <h3 style="color: var(--accent); font-family: Georgia, serif; font-size: 1.2rem; margin-bottom: 0.8rem;">Does BookHive work offline?</h3>
+                <p style="color: var(--text-secondary); line-height: 1.7;">Absolutely. You can download any book to your device and read it completely offline — no internet connection needed. Perfect for flights, commutes, travel, or anywhere with limited connectivity. Your reading progress is saved automatically.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom: 1.5rem; cursor: default;">
+                <h3 style="color: var(--accent); font-family: Georgia, serif; font-size: 1.2rem; margin-bottom: 0.8rem;">What books are available on BookHive?</h3>
+                <p style="color: var(--text-secondary); line-height: 1.7;">BookHive offers 1000+ public domain classic books spanning fiction, philosophy, mystery, poetry, science fiction, and more. You'll find beloved works by authors like Jane Austen, Charles Dickens, Fyodor Dostoevsky, Mark Twain, Arthur Conan Doyle, and many others. New titles are added regularly.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom: 1.5rem; cursor: default;">
+                <h3 style="color: var(--accent); font-family: Georgia, serif; font-size: 1.2rem; margin-bottom: 0.8rem;">Is BookHive available for iOS?</h3>
+                <p style="color: var(--text-secondary); line-height: 1.7;">BookHive is currently available exclusively on Android. You can download it for free from the Google Play Store. An iOS version is not available at this time, but stay tuned for future updates.</p>
+            </div>
+            <div class="feature-card" style="margin-bottom: 1.5rem; cursor: default;">
+                <h3 style="color: var(--accent); font-family: Georgia, serif; font-size: 1.2rem; margin-bottom: 0.8rem;">What reading features does BookHive offer?</h3>
+                <p style="color: var(--text-secondary); line-height: 1.7;">BookHive includes multiple reading themes (Light, Sepia, Dark, AMOLED), a dyslexia-friendly font option, automatic progress saving, bookmarks, table of contents navigation, reading statistics and streaks, and smart search by title, author, category, or mood.</p>
+            </div>
         </div>
     </section>
 
@@ -1338,7 +1377,10 @@
         <div class="footer-content">
             <div class="footer-logo">BookHive</div>
             <div class="footer-links">
-                <a href="privacy.html" target="_blank">Privacy Policy</a>
+                <a href="about.html">About</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="refund.html">Refund Policy</a>
+                <a href="privacy.html">Privacy Policy</a>
             </div>
             <div class="footer-socials">
 <button class="animated-button" onclick="window.location.href='mailto:bookhive.support@gmail.com'">
@@ -1355,7 +1397,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            © 2025 BookHive. Made with ❤️ for book lovers everywhere.
+            © 2026 BookHive. Made with ❤️ for book lovers everywhere.
         </div>
     </footer>
 

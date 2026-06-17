@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Allow: /share.html
+Disallow: /scratch/
+
+Sitemap: https://bookhive-app.netlify.app/sitemap.xml
